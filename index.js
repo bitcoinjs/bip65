@@ -1,3 +1,5 @@
+'strict mode'
+
 // https://github.com/bitcoin/bitcoin/blob/5961b23898ee7c0af2626c46d5d70e80136578d3/src/script/script.h#L39
 const LOCKTIME_THRESHOLD = 0x1dcd6500 // 500000000
 
@@ -13,7 +15,9 @@ function decode (lockTime) {
   }
 }
 
-function encode ({ blocks, utc }) {
+function encode (obj) {
+  let blocks = obj.blocks
+  let utc = obj.utc
   if (blocks !== undefined && utc !== undefined) throw new TypeError('Cannot encode blocks AND utc')
   if (blocks === undefined && utc === undefined) return 0 // neither?
 
