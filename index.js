@@ -1,4 +1,4 @@
-'strict mode'
+'use strict'
 
 // https://github.com/bitcoin/bitcoin/blob/5961b23898ee7c0af2626c46d5d70e80136578d3/src/script/script.h#L39
 const LOCKTIME_THRESHOLD = 0x1dcd6500 // 500000000
