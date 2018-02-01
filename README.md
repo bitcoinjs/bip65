@@ -13,6 +13,9 @@ let bip65 = require('bip65')
 bip65.encode({ utc: 102 })
 // => TypeError: Expected Number utc >= 500000000
 
+bip65.encode({ blocks: 1517448381 })
+// => TypeError: Expected Number Blocks < 500000000
+
 bip65.encode({ blocks: 54 })
 // => 0x00000036
 
