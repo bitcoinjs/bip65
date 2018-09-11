@@ -27,4 +27,4 @@ bip65.decode(0x00000036)
 ```
 
 
-## LICENSE [ISC](LICENSE)
+## LICENSE [MIT](LICENSE)

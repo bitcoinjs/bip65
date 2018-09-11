@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/bitcoinjs/bip65/issues"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "Daniel Cousens",
   "files": [
     "index.js"
